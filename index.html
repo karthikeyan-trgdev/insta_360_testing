@@ -20,14 +20,15 @@
   </header>
 
 <section>
-  <a-scene embedded>
-    <a-assets>
-      <video id="video360" autoplay loop playsinline muted src="assets/images/insta_video.mp4" crossorigin="anonymous"></video>
-    </a-assets>
+<a-scene embedded vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+  <a-assets>
+    <video id="video360" autoplay loop playsinline muted src="assets/images/insta_video.mp4" crossorigin="anonymous"></video>
+  </a-assets>
 
-    <a-videosphere src="#video360"></a-videosphere>
-    <a-entity camera look-controls="enabled: true; touchEnabled: true; magicWindowTrackingEnabled: false"></a-entity>
-  </a-scene>
+  <a-videosphere src="#video360"></a-videosphere>
+  <a-entity camera look-controls="touchEnabled: true; magicWindowTrackingEnabled: false"></a-entity>
+</a-scene>
+
 </section>
 
   <footer class="container-fluid">
